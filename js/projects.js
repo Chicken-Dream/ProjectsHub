@@ -14,17 +14,27 @@ window.PROJECTS = [
     description: "A sample project. Replace this with a short description of what Turtle does.",
     subdomain: "turtle",
     image: "images/projects/turtle.svg",
+    author: "Sean",
+  },
+  {
+    title: "1v1 Tanks",
+    description: "1 verus 1 tank game",
+    subdomain: "tanks",
+    image: "images/projects/tankGameImage.png",
+    author: "Sean",
   },
   {
     title: "Project Two",
     description: "Another placeholder project. Edit js/projects.js to change or remove it.",
     subdomain: "project-two",
     image: "images/projects/placeholder.svg",
+    author: "N/A",
   },
   {
     title: "Project Three",
     description: "Cards without a working image fall back to a coloured background.",
     subdomain: "project-three",
     image: "",
+    author: "N/A",
   },
 ];
