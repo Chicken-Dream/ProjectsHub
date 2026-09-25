@@ -24,6 +24,13 @@ window.PROJECTS = [
     author: "Sean",
   },
   {
+    title: "Bomberman",
+    description: "place bombs and survive",
+    subdomain: "bomberman",
+    image: "images/projects/bomberman_picture.png",
+    author: "Sean",
+  },
+  {
     title: "Project Two",
     description: "Another placeholder project. Edit js/projects.js to change or remove it.",
     subdomain: "project-two",
