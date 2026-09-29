@@ -31,6 +31,13 @@ window.PROJECTS = [
     author: "Sean",
   },
   {
+    title: "Can Your Pet",
+    description: "take care of your pet chicken",
+    subdomain: "canyourpet",
+    image: "images/projects/can_your_pet.png",
+    author: "Sean",
+  },
+  {
     title: "Project Two",
     description: "Another placeholder project. Edit js/projects.js to change or remove it.",
     subdomain: "project-two",
