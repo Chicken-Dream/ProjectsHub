@@ -34,7 +34,7 @@ window.PROJECTS = [
     title: "Can Your Pet",
     description: "take care of your pet chicken",
     subdomain: "canyourpet",
-    image: "images/projects/can_your_pet.png",
+    image: "images/projects/can-your-pet.png",
     author: "Sean",
   },
   {
