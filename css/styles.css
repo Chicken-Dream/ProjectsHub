@@ -63,6 +63,44 @@ main {
   color: var(--muted);
 }
 
+/* ---------- Ko-fi ---------- */
+
+.kofi-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'DM Sans', sans-serif !important;
+  width: 100%;
+  margin: 0 0 32px;
+  padding: 16px;
+  border-radius: var(--radius);
+  background: #84cc16;
+  color: #1c1e26;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kofi-button__icon {
+  height: 1.6em;
+  width: auto;
+}
+
+.kofi-button:hover,
+.kofi-button:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.kofi-button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
 /* ---------- Grid ---------- */
 
 .grid {
@@ -104,7 +142,7 @@ main {
 
 .card__media {
   position: relative;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 1 / 1;
   background: var(--card-fallback);
   overflow: hidden;
 }
