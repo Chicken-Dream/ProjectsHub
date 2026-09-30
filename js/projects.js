@@ -35,7 +35,14 @@ window.PROJECTS = [
     description: "take care of your pet chicken",
     subdomain: "canyourpet",
     image: "images/projects/can-your-pet.png",
-    author: "Sean",
+    author: "Jordan",
+  },
+  {
+    title: "Tsumego",
+    description: "play japanese go with your friends/enemies",
+    subdomain: "tsumego",
+    image: "images/projects/tsumego.png",
+    author: "Jordan",
   },
   {
     title: "Project Two",
