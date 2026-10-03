@@ -103,14 +103,34 @@ main {
 
 /* ---------- Grid ---------- */
 
+/* Flex (not grid) so an incomplete last row is centered instead of left-aligned. */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 24px;
+  --cols: 3;
+  --gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+.grid > .card {
+  flex: 0 0 calc((100% - (var(--cols) - 1) * var(--gap)) / var(--cols));
+}
+
+@media (max-width: 800px) {
+  .grid {
+    --cols: 2;
+  }
+}
+
+@media (max-width: 520px) {
+  .grid {
+    --cols: 1;
+  }
 }
 
 .empty {
-  grid-column: 1 / -1;
+  flex: 1 1 100%;
   text-align: center;
   color: var(--muted);
 }
@@ -145,6 +165,43 @@ main {
   aspect-ratio: 1 / 1;
   background: var(--card-fallback);
   overflow: hidden;
+}
+
+/* Featured card: spans the full grid width with a wide banner image. */
+.grid > .card--featured {
+  flex-basis: 100%;
+}
+
+.card--featured .card__media {
+  aspect-ratio: 16 / 7;
+}
+
+.card--featured .card__title {
+  padding: 18px 20px;
+  font-size: 1.5rem;
+}
+
+/* "More coming soon" placeholder: same footprint as a project card, not clickable. */
+.card--soon {
+  border: 2px dashed var(--muted);
+  background: transparent;
+  box-shadow: none;
+  color: var(--muted);
+}
+
+.card--soon:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.card--soon .card__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 .card__media img {

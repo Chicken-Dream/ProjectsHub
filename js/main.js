@@ -10,7 +10,7 @@
 
   function createCard(project) {
     var card = document.createElement("a");
-    card.className = "card";
+    card.className = "card" + (project.featured ? " card--featured" : "");
     card.href = projectUrl(project);
     card.setAttribute("aria-label", project.title + " – " + project.description);
 
@@ -46,6 +46,23 @@
     return card;
   }
 
+  function createComingSoonCard() {
+    var card = document.createElement("div");
+    card.className = "card card--soon";
+
+    var media = document.createElement("div");
+    media.className = "card__media";
+    media.textContent = "More coming soon";
+
+    var title = document.createElement("h2");
+    title.className = "card__title";
+    title.textContent = "Stay tuned";
+
+    card.appendChild(media);
+    card.appendChild(title);
+    return card;
+  }
+
   function render() {
     var grid = document.getElementById("project-grid");
     var projects = window.PROJECTS || [];
@@ -59,6 +76,7 @@
     projects.forEach(function (p) {
       fragment.appendChild(createCard(p));
     });
+    fragment.appendChild(createComingSoonCard());
     grid.appendChild(fragment);
   }
 
