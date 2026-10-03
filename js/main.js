@@ -10,7 +10,7 @@
 
   function createCard(project) {
     var card = document.createElement("a");
-    card.className = "card" + (project.featured ? " card--featured" : "");
+    card.className = "card";
     card.href = projectUrl(project);
     card.setAttribute("aria-label", project.title + " – " + project.description);
 

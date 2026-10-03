@@ -7,34 +7,32 @@
  *   subdomain   – the card links to https://<subdomain>.dreamteamhub.ca
  *                 (use `url` instead to link somewhere else entirely)
  *   image       – path to an image in images/projects/ (a square image works best)
- *   featured    – optional; true makes the card span the full width at the top
  */
 window.PROJECTS = [
   {
     title: "Bomberman",
-    description: "place bombs and survive",
+    description: "place bombs and try not to die",
     subdomain: "bomberman",
-    image: "images/projects/bomberman_picture.png",
+    image: "images/projects/bomberman.jpg",
     author: "Sean",
-    featured: true,
   },
   {
     title: "Can Your Pet",
     description: "take care of your pet chicken",
     subdomain: "canyourpet",
-    image: "images/projects/can-your-pet.png",
+    image: "images/projects/canyourpet.png",
     author: "Jordan",
   },
   {
-    title: "1v1 Tanks",
-    description: "1 verus 1 tank game",
+    title: "Tanks",
+    description: "shoot your friends/enemies",
     subdomain: "tanks",
-    image: "images/projects/tankGameImage.png",
+    image: "images/projects/tank.png",
     author: "Sean",
   },
   {
     title: "Turtle",
-    description: "A sample project. Replace this with a short description of what Turtle does.",
+    description: "paint using code",
     subdomain: "turtle",
     image: "images/projects/turtle.svg",
     author: "Sean",

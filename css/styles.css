@@ -167,20 +167,6 @@ main {
   overflow: hidden;
 }
 
-/* Featured card: spans the full grid width with a wide banner image. */
-.grid > .card--featured {
-  flex-basis: 100%;
-}
-
-.card--featured .card__media {
-  aspect-ratio: 16 / 7;
-}
-
-.card--featured .card__title {
-  padding: 18px 20px;
-  font-size: 1.5rem;
-}
-
 /* "More coming soon" placeholder: same footprint as a project card, not clickable. */
 .card--soon {
   border: 2px dashed var(--muted);
