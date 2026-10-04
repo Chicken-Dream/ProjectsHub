@@ -12,7 +12,7 @@
     var card = document.createElement("a");
     card.className = "card";
     card.href = projectUrl(project);
-    card.setAttribute("aria-label", project.title + " – " + project.description);
+    card.setAttribute("aria-label", project.title + " ~ " + project.description);
 
     var media = document.createElement("div");
     media.className = "card__media";

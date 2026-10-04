@@ -2,11 +2,11 @@
  * Project list for the Dream Team Hub home page.
  *
  * To add a project, append an object to this array:
- *   title       – shown at the bottom of the card
- *   description – shown when hovering over the card (keep it to 1–3 sentences)
- *   subdomain   – the card links to https://<subdomain>.dreamteamhub.ca
+ *   title       ~ shown at the bottom of the card
+ *   description ~ shown when hovering over the card (keep it to 1~3 sentences)
+ *   subdomain   ~ the card links to https://<subdomain>.dreamteamhub.ca
  *                 (use `url` instead to link somewhere else entirely)
- *   image       – path to an image in images/projects/ (a square image works best)
+ *   image       ~ path to an image in images/projects/ (a square image works best)
  */
 window.PROJECTS = [
   {
