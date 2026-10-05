@@ -31,15 +31,8 @@ window.PROJECTS = [
     author: "Sean",
   },
   {
-    title: "Turtle",
-    description: "paint using code",
-    subdomain: "turtle",
-    image: "images/projects/turtle.svg",
-    author: "Sean",
-  },
-  {
     title: "Tsumego",
-    description: "play japanese go with your friends/enemies",
+    description: "sun tzu art of war",
     subdomain: "tsumego",
     image: "images/projects/tsumego.png",
     author: "Jordan",
